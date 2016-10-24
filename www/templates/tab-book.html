@@ -1,0 +1,35 @@
+<ion-view view-title="Book">
+  <ion-content>
+   
+  <div id="slider">
+    <figure>
+      <img src="img/tao1.jpg" alt>
+      <img src="img/tao2.jpg" alt>
+      <img src="img/tao1.jpg" alt>
+    </figure>
+  </div>
+  <style type="text/css">
+  @keyframes slidy {
+    0% { left: 0%; }
+    40% { left: 0%; }
+    50% { left: -100%; }
+    90% { left: -100%; }
+    100% { left: -200%; }
+  }
+
+  body { margin: 0; } 
+  div#slider { overflow: hidden; }
+  div#slider figure img { width: 33.3333%; float: left; }
+  div#slider figure { 
+    position: relative;
+    width: 300%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 6s slidy infinite; 
+  }
+  </style>
+
+  </ion-content>
+</ion-view>

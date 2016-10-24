@@ -1,0 +1,47 @@
+<ion-view view-title="Account">
+
+  <ion-content>
+    <ion-list>
+      <ion-toggle ng-model="settings.enableFriends">
+        Enable Friends
+      </ion-toggle>
+    </ion-list>
+
+    <h3 align="center">Login</h3>
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Username:</span>
+        <input type="text">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Password:</span>
+        <input type="password">
+      </label>
+    </div>
+
+    <div ng-app="">
+      <p align="center">Name : <input type="text border: 1px solid #DADADA" ng-model="name"></p>
+      <h1 align="center">Hello {{name}}</h1>
+    </div>
+
+    <div ng-app="">
+      <p>点击按钮:
+        <button ng-click="count = count + 1" ng-init="count=0"> Click Me </button>
+        按钮被点击了 {{count}} 次。
+      </p>
+    </div>
+  </ion-content>
+</ion-view>
+
+<ion-footer-bar align-title="left" class="bar-assertive">
+  <div class="buttons">
+    <button class="button">左侧按钮</button>
+  </div>
+  <h1 class="title" align="center">Title!</h1>
+  <div class="buttons" ng-click="doSomething()">
+    <button class="button">右侧按钮</button>
+  </div>
+</ion-footer-bar>
+
+
+
